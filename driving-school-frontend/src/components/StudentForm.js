@@ -45,7 +45,7 @@ const StudentForm = () => {
 
       // Send POST request with query parameters and student data
       const response = await axios.post(
-        `http://127.0.0.1:8000/students/?${queryParams}`,
+        `https://driving-school-project.onrender.com/students/?${queryParams}`,
         studentDetails,
         {
           headers: {
