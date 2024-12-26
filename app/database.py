@@ -5,7 +5,7 @@ from sqlalchemy.orm import declarative_base
 import os
 
 # MySQL database URL
-DATABASE_URL = f"mysql+pymysql://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}@{os.getenv('DB_HOST')}:{os.getenv('DB_PORT')}/driving_school?ssl-mode=REQUIRED"
+DATABASE_URL = f"mysql+pymysql://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}@{os.getenv('DB_HOST')}:{os.getenv('DB_PORT')}/driving_school?ssl=true"
 
 # Create the SQLAlchemy engine
 engine = create_engine(DATABASE_URL)
