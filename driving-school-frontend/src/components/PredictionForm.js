@@ -43,7 +43,7 @@ const PredictionForm = () => {
     setLoading(true); // Set loading state to true when the request starts
 
     try {
-      const response = await axios.post('http://127.0.0.1:8000/predict/', studentData);
+      const response = await axios.post('https://driving-school-project.onrender.com/predict/', studentData);
       setLoading(false); // Set loading state to false when the response is received
 
       if (response.data.prediction) {
