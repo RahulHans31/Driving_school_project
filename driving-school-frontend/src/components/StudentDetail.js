@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
@@ -13,7 +12,7 @@ const StudentDetail = () => {
     const fetchStudent = async () => {
       try {
         // Send GET request with query parameter
-        const response = await axios.get(`http://localhost:8000/students/`, {
+        const response = await axios.get(`https://driving-school-project.onrender.com/students/`, {
           params: { student_id: student_id }  // Pass student_id as query param
         });
         setStudent(response.data);  // Assuming the response is a single student object

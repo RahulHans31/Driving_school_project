@@ -13,7 +13,7 @@ const StudentList = () => {
   useEffect(() => {
     const fetchStudents = async () => {
       try {
-        let url = 'http://127.0.0.1:8000/students/';
+        let url = 'https://driving-school-project.onrender.com/students/';
 
         // Check if studentId is available from URL params or query string
         if (studentId) {
