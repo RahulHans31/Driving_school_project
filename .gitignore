@@ -1,0 +1,41 @@
+
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build output
+dist/
+build/
+
+# React app specific
+*.env
+*.local
+
+# Python specific
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.egg-info/
+venv/
+env/
+
+# IDE specific
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+*.log
+*.pot
+*.py[cod]
+*.pdb
+*.egg
+*.egg-info
+*.whl
